@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="TITLE"
+
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/expenseDetailTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0.5dp"
+            android:hint="Enter Title"
+            android:textColor="@color/db"
+
+            android:textColorHint="@color/db" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="DESCRIPTION"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <EditText
+            android:id="@+id/expenseDetailDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0.5dp"
+            android:hint="Enter Description"
+            android:textColor="@color/db"
+            android:textColorHint="@color/db" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="SET DATE"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <EditText
+                android:id="@+id/expenseDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="DD/MM/YYYY"
+                android:textColor="@color/db"
+                android:textColorHint="@color/db" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/calender"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@mipmap/cal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="SET TIME"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <EditText
+                android:id="@+id/expenseTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="HH:MM"
+                android:textColor="@color/db"
+                android:textColorHint="@color/db" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/clock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:id="@+id/spin"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY"
+            android:textColor="@color/colorPrimary"/>
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/spinner"
+    android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET ALARM"
+            android:textColor="@color/colorPrimary" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="" />
+
+    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/expenseDetailSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+
+        android:text="Save Changes" />
+</LinearLayout>
+
+</ScrollView>

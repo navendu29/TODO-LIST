@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:id="@+id/text1"
+    android:layout_marginLeft="100dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
+    >
+
+
+</TextView>
